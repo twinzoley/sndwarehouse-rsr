@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопка со звуком</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="playSound()">Нажми меня</button>
+
+    <audio id="sound" src="https://www.dropbox.com/scl/fi/gc3ohr4toqnncoq5jtqo9/Shkerebertb-mp3cut.net.mp3?rlkey=amajf3g31nq6e5gfvyh6kiubj&st=ye59bkwn&dl=1"></audio>
+
+    <script>
+        function playSound() {
+            document.getElementById('sound').play();
+        }
+    </script>
+
+</body>
+</html>
